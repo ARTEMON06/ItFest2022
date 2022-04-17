@@ -5,14 +5,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/ARTEMON06/ItFest2022">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Arduino HandBook</h3>
 
   <p align="center">
-    Отборочное задание для it-fest 2022. Сборник статей для arduino-разработчика. Команда Авто11.
+    Отборочное задание для it-fest 2022. Сборник статей для arduino-разработчика.
   </p>
 </div>
 
@@ -22,13 +22,30 @@
 <details>
   <summary>Содержание</summary>
   <ol>
-    <li><a href="#Библиотеки">Библиотеки</a></li>
     <li><a href="#Для запуска">Для запуска</a></li>
+    <li><a href="#Презентационные материалы">Презентационные материалы</a></li>
+    <li><a href="#Инструменты и библиотеки">Инструменты и библиотеки</a></li>
+    <li><a href="#Системные требования">Системные требования</a></li>
     <li><a href="#Разработчики">Разработчики</a></li>
+
   </ol>
 </details>
 
-### Библиотеки
+## Для запуска
+
+Чтобы запустить приложение надо скачать и установить apk-файл (main.apk) на Ваш смартфон.
+
+<p align="right">(<a href="#top">к содержанию</a>)</p>
+
+## Презентационные материалы
+
+* [Презентация](Проект%20Arduino%20HandBook.pdf)
+* [Видео](https://drive.google.com/file/d/1z0C03FRRzHMgYGIQT1tmovpnrir3RAXi/view?usp=sharing)
+* [Trello](https://trello.com/b/9Oip6jNH/arduino-handbook)
+
+<p align="right">(<a href="#top">к содержанию</a>)</p>
+
+## Инструменты и библиотеки
 
 * [Android](https://developer.android.com/docs)
 * [FireBase](https://firebase.google.com/docs/libraries)
@@ -36,28 +53,18 @@
 
 <p align="right">(<a href="#top">к содержанию</a>)</p>
 
+## Системные требования
 
-
-<!-- GETTING STARTED -->
-
-## Для запуска
-
-Чтобы запустить приложение надо скачать и установить apk-файл (main.apk) на Ваш смартфон. Android 11+ рекомендовано. Минимально 6+.
+* Рекомендованные - android 11+
+* Минимальные - android 6+
 
 <p align="right">(<a href="#top">к содержанию</a>)</p>
 
-<!-- CONTACT -->
-
 ## Разработчики
-
-Файл презентации в формате (pdf) лежит в корне.
-Проект Arduino HandBook (1).pdf
-
-Trello: https://trello.com/invite/b/9Oip6jNH/1e72da6392d6570715d5e36f94ed0f16/arduino-handbook
 
 * Суханов Артём Алексеевич
 * Криштопа Денис Алексеевич
-* Цыканова Ксения Александровна
+* Цыканова Ксения Александровка
 
 <p align="right">(<a href="#top">к содержанию</a>)</p>
 
