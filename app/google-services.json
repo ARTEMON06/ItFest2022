@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026079430498",
+    "firebase_url": "https://arduinohandbookbase-default-rtdb.firebaseio.com",
+    "project_id": "arduinohandbookbase",
+    "storage_bucket": "arduinohandbookbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026079430498:android:28f586a359a8f8784f3e3b",
+        "android_client_info": {
+          "package_name": "com.example.arduinohandbookversion2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026079430498-q1hu78qsju0otkeb1hvb99qvamrtq1h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMrHOQBql3oVs24N4qvPqHODwhtvFNNjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026079430498-q1hu78qsju0otkeb1hvb99qvamrtq1h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

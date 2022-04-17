@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_top"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="@font/panton_regular"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:text="@string/note_title"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/warning"
+        android:layout_below="@+id/title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/back_items">
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/panton_regular"
+            android:textAlignment="center"
+            android:text="Вы ничего не сохраняли"
+            android:textSize="20sp"
+            android:background="@null"
+            android:textColor="?text_item"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginHorizontal="20dp"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:drawSelectorOnTop="false"
+        android:overScrollMode="never"
+        android:paddingVertical="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/circle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/home"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="@string/but" />
+</RelativeLayout>

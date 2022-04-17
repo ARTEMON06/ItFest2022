@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_top" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="@font/panton_regular"
+        android:lineSpacingExtra="20sp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="8dp"
+        android:text="Пользователь"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/but"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/my_articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/button"
+            android:fontFamily="@font/panton_regular"
+            android:text="Мои статьи"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/user_button_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/button"
+            android:fontFamily="@font/panton_regular"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/footer_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottom_image" />
+</RelativeLayout>

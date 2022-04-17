@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateArticle">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_top" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="@font/panton_regular"
+        android:lineSpacingExtra="20sp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="8dp"
+        android:text="Редактор статьи"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:clipToPadding="false"
+        android:drawSelectorOnTop="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_items"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/title_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/panton_regular"
+                        android:hint="Заголовок"
+                        android:importantForAutofill="no"
+                        android:inputType="text|textAutoCorrect"
+                        android:shadowColor="?accent"
+                        android:textColor="?text_item"
+                        android:textColorHighlight="?highlight"
+                        android:textColorHint="?text_item"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/panton_regular"
+                    android:text="К тексту применимы теги html"
+                    android:textAlignment="center"
+                    android:textColor="?text_item"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_items"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/text_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/playfair"
+                        android:hint="Текст статьи"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine|textWebEditText"
+                        android:shadowColor="?accent"
+                        android:textColor="?text_item"
+                        android:textColorHighlight="?highlight"
+                        android:textColorHint="?text_item"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/back_items"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/panton_regular"
+                        android:text="Картинки"
+                        android:textAlignment="center"
+                        android:textColor="?text_item"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/images_article"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_weight="10"
+                            android:clipToPadding="false"
+                            android:drawSelectorOnTop="false"
+                            android:fillViewport="true"
+                            android:orientation="vertical"
+                            android:overScrollMode="never"
+                            android:scrollbarStyle="outsideOverlay"
+                            android:scrollbars="none"
+                            android:textAlignment="center"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:contentDescription="arrows"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/arrows_ico" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/button"
+                        android:backgroundTint="@color/button"
+                        android:fontFamily="@font/panton_regular"
+                        android:text="Добавить картинку"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/panton_regular"
+                    android:text="Статья готова?"
+                    android:textAlignment="center"
+                    android:textColor="?text_item"
+                    android:textSize="15sp" />
+
+                <Button
+
+                    android:id="@+id/add_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/button"
+                    android:fontFamily="@font/panton_regular"
+                    android:text="Завершить"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arduinohandbookversion2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/foregraund"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/background"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MyArticles"
+            android:exported="false" />
+        <activity
+            android:name=".User.ProfileUser"
+            android:exported="false" />
+        <activity
+            android:name=".User.SignInUser"
+            android:exported="false" />
+        <activity
+            android:name=".User.SignUpUser"
+            android:exported="false" />
+        <activity
+            android:name=".CreateArticle"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

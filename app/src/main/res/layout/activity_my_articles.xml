@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyArticles">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_top"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="@font/panton_regular"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:text="@string/myArticlesTitle"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/warning_my_articles"
+        android:layout_below="@+id/title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/back_items">
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/panton_regular"
+            android:textAlignment="center"
+            android:text="У вас нет своих записей"
+            android:textSize="20sp"
+            android:background="@null"
+            android:textColor="?text_item"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_my_articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginHorizontal="20dp"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:drawSelectorOnTop="false"
+        android:overScrollMode="never"
+        android:paddingVertical="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/circle" />
+
+    <ImageButton
+        android:id="@+id/add_my_article"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/add_article_ico"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="@string/but" />
+</RelativeLayout>

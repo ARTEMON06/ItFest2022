@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.SignInUser">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_top"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="@font/panton_regular"
+        android:lineSpacingExtra="20sp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="8dp"
+        android:text="Вход"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:background="@null">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:src="@drawable/back_button_ico"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/but" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/signInLinear"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/back_items">
+
+            <EditText
+                android:id="@+id/email_user"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:textColorHighlight="?highlight"
+                android:hint="Эл. почта"
+                android:shadowColor="?accent"
+                android:textColor="?text_item"
+                android:textColorHint="?text_item"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/panton_regular"
+                android:inputType="textWebEmailAddress"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/back_items">
+
+            <EditText
+                android:id="@+id/password_user"
+                android:textColor="?text_item"
+
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:hint="Пароль"
+                android:shadowColor="?accent"
+                android:textColorHint="?text_item"
+                android:textColorHighlight="?highlight"
+                android:background="@null"
+                android:fontFamily="@font/panton_regular"
+                android:inputType="textWebPassword"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/sign_in_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Войти"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/button"
+                android:elevation="10dp"
+                android:translationZ="4dp"
+                android:fontFamily="@font/panton_regular"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/panton_regular"
+                android:textColor="?text_item"
+                android:text="Нет аккаунта?"/>
+
+            <Button
+                android:id="@+id/sign_up_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/button"
+                android:fontFamily="@font/panton_regular"
+                android:text="Зарегистрироваться"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/footer_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottom_image" />
+</RelativeLayout>

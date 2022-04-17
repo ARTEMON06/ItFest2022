@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Arduino HandBook</string>
+    <string name="mini_title">Разделы:</string>
+    <string name="but">but</string>
+    <string name="note_title">Сохраненные</string>
+    <bool name="themeLight">true</bool>
+
+    <string name="text_0">
+        Функция setup() вызывается, когда стартует скетч. Используется для инициализации переменных, определения
+        режимов работы выводов, запуска используемых библиотек и т.д. Функция setup запускает только один раз, после каждой подачи питания или сброса платы Arduino.
+    </string>
+
+    <string name="text_1">
+        После вызова функции setup(), которая инициализирует и устанавливает первоначальные значения, функция loop() делает точь-в-точь то, что означает её название, и крутится в цикле, позволяя вашей программе совершать вычисления и реагировать на них. Используйте её для активного управления платой Arduino.
+    </string>
+
+    <string name="text_2">Описание
+        \nУстанавливает режим работы заданного вход/выхода(pin) как входа или как выхода. Подробнее про
+        цифровые вход/выходы(pins).\n
+
+    \nСинтаксис
+\npinMode(pin, mode)\n
+
+    \nПараметры
+\npin: номер вход/выхода(pin), который Вы хотите установить
+\nmode: режим одно из двух значение - INPUT или OUTPUT, устанавливает на вход или выход соответственно.\n
+
+    \nВозвращаемое значение
+\nнет\n
+
+    \nПримечание
+\nАналоговые входы (analog pins) могут быть использованы как цифровые вход/выходы (digital pins). Обращение к ним идет по номерам от 14 (для аналогового входа 0) до 19 (для аналогового входа 5).
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="myArticlesTitle">Мои статьи</string>
+</resources>

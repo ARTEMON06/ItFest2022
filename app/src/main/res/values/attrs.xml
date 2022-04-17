@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="accent" format="reference" />
+    <attr name="text_item" format="reference" />
+    <attr name="item" format="reference" />
+    <attr name="back_article" format="reference"/>
+    <attr name="right_color" format="reference"/>
+    <attr name="text_article" format="reference"/>
+    <attr name="highlight" format="color"/>
+    <attr name="back_pressed_button" format="color"/>
+</resources>
