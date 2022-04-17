@@ -53,7 +53,7 @@
 Файл презентации в формате (pdf) лежит в корне.
 Проект Arduino HandBook (1).pdf
 
-Trello: 
+Trello: https://trello.com/invite/b/9Oip6jNH/1e72da6392d6570715d5e36f94ed0f16/arduino-handbook
 
 * Суханов Артём Алексеевич
 * Криштопа Денис Алексеевич
